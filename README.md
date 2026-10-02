@@ -2,7 +2,7 @@
 
 A small Spring Boot REST API for booking grocery delivery slots. Each slot has a fixed capacity, and a slot can never be overbooked.
 
-Stack: Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL.
+Stack is Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL.
 
 ## Run it
 
