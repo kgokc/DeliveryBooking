@@ -1,5 +1,7 @@
 # Delivery Slots
 
+[![Build Status](https://dev.azure.com/kgokc-ci/DeliveryBooking/_apis/build/status%2Fkgokc.DeliveryBooking?branchName=main)](https://dev.azure.com/kgokc-ci/DeliveryBooking/_build/latest?definitionId=1&branchName=main)
+
 A small Spring Boot REST API for booking grocery delivery slots. Each slot has a fixed capacity, and a slot can never be overbooked.
 
 Stack is Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL.
