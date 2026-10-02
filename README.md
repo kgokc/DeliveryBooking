@@ -58,6 +58,11 @@ Why not a pessimistic lock (`SELECT ... FOR UPDATE`)? Slots are read far more of
 
 The tradeoff: under heavy contention on one slot, a request can lose the race and get `409` even though places remain. The client is expected to retry. If contention on hot slots became a real problem, switching that one query to a pessimistic lock, or adding automatic retry in the service, would be the next step.
 
+
+## Author note
+
+This project was built primarily with Claude Code as a learning exercise. I ran the tests, set up the Azure DevOps CI pipeline on a self-hosted agent, and I am working through the code to be able to explain each design decision.
+
 ## Out of scope
 
 Auth, users, a frontend, creating slots via the API, and deployment.
