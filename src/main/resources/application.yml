@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: delivery-slots
+  datasource:
+    url: jdbc:postgresql://localhost:5432/delivery
+    username: delivery
+    password: delivery
+  jpa:
+    hibernate:
+      ddl-auto: update
