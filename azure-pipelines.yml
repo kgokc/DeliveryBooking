@@ -12,7 +12,7 @@ pr:
       - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 steps:
   - task: JavaToolInstaller@0
@@ -22,8 +22,7 @@ steps:
       jdkArchitectureOption: x64
       jdkSourceOption: PreInstalled
 
-  - script: ./mvnw -B verify
-    displayName: Build and run tests
+  - script: .\mvnw.cmd -B verify
 
   - task: PublishTestResults@2
     displayName: Publish test results
