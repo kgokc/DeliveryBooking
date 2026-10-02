@@ -24,7 +24,7 @@ docker compose exec postgres psql -U delivery -d delivery -c \
 ## API
 
 | Method | Path | Result |
-|---|---|---|
+| --- | --- | --- |
 | `GET` | `/slots` | List slots with capacity and free places |
 | `POST` | `/slots/{slotId}/bookings` | `201` with the booking, `409` if the slot is full, `404` if unknown |
 | `DELETE` | `/bookings/{bookingId}` | `200` with the cancelled booking, `404` if unknown |
